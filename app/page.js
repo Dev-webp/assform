@@ -63,21 +63,7 @@ const ContactPage = () => {
             initial="hidden"
             animate="visible"
           >
-            <motion.h1
-              className="font-semibold uppercase leading-tight bg-gradient-to-r from-red-900 to-blue-500 text-transparent bg-clip-text text-3xl sm:text-4xl md:text-5xl lg:text-[3.50rem] mt-12 sm:mt-12"
-
-              style={{ fontFamily: "Times New Roman, serif" }} 
-              variants={titleVariants}
-            >
-              
-            </motion.h1>
-            <motion.p
-              className="flex text-transparent bg-clip-text bg-gradient-to-r from-black to-black tracking-tight text-left md:font-medium max-w-xl lg:max-w-lg mt-6"
-              style={{ fontWeight: "bolder", fontFamily: "Times New Roman, serif"}}
-              variants={descriptionVariants}
-            >
-             
-            </motion.p>
+           
           </motion.div>
 
           {/* Form Section */}
