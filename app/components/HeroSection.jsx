@@ -45,7 +45,7 @@ const HeroSection = () => {
           </a>
         </div> */}
 
-<div className="absolute top-4 right-4 text-white flex items-center space-x-4 text-xs sm:text-sm md:text-base font-semibold italic">
+<div className="absolute top-4 right-4 text-white flex flex-col md:flex-row items-center gap-0 text-xs sm:text-sm md:text-base font-semibold italic pt-1">
   {/* Locations (Hidden on smaller screens) */}
   <div className="hidden lg:flex items-center space-x-2 text-black uppercase">
     <div className="flex items-center animate-pulse text-custom-blue">
@@ -63,23 +63,24 @@ const HeroSection = () => {
   </div>
 
   {/* Email (Visible on all screens) */}
-  <div className="flex items-center space-x-2 text-black uppercase">
-    <a href="mailto:info@vjcoverseas.com" className="flex items-center text-custom-blue">
-      <FaEnvelope className="mr-1 w-5 h-5 text-black" />
-      <p>info@vjcoverseas.com</p>
-    </a>
+  <div className="flex items-center text-black uppercase ml-4">
+  <a href="mailto:info@vjcoverseas.com" className="flex items-center text-custom-blue">
+    <FaEnvelope className="mr-1 w-5 h-5 text-black" />
+    <p>info@vjcoverseas.com</p>
+  </a>
+
+  {/* Phone */}
+ 
   </div>
 
-  {/* Phone (Visible on all screens) */}
-  <a
-    href="tel:+919160449000"
-    className="flex items-center text-white py-1 px-3 rounded-lg text-xs lg:text-sm whitespace-nowrap font-bold uppercase bg-transparent"
-  >
-    <img src="/phone.gif" alt="Phone" className="h-6 w-6 mr-2" />
+  {/* Phone */}
+  <a href="tel:+919160449000" className="flex items-center text-white font-bold uppercase bg-transparent">
+    <img src="/phone.gif" alt="Phone" className="h-6 w-6 ml-2" />
     <span className="text-black">+91 9160449000</span>
   </a>
 </div>
-<hr className="border-black w-[53%] ml-auto border-spacing-1" />
+<hr className="border-black w-[51%] ml-auto border-spacing-1 hidden md:block -mt-2" />
+
 
 
 
