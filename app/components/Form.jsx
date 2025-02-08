@@ -128,15 +128,15 @@ const Form = () => {
   return (
     <div className="w-full flex flex-col items-start mt-28 pt-6 sm:ml-4 md:ml-8 lg:ml-12">
     {/* Country Selection Step */}
-    <h1 className="text-1xl sm:text-1xl md:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-black to-orange-500 text-center fixed top-0 left-1/2 transform -translate-x-1/2 mt-5 z-10">
+    <h1 className="text-lg sm:text-2xl md:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-black to-orange-500 text-center fixed top-0 left-1/2 transform -translate-x-1/2 mt-5 z-10">
   Select a Country to Live, Work and Settle in Abroad
 </h1>
 
 
     {currentStep === 0 ? (
-      <div>
+      <div className='-mt-32'>
         <h3 className="text-xl font-semibold">Select a Country for free Evaluation</h3>
-        <div className="flex flex-wrap gap-3 mt-2">
+        <div className="flex flex-wrap gap-3 ">
           {Object.keys(mcqQuestions).map((country) => (
             <button
               key={country}
@@ -162,7 +162,7 @@ const Form = () => {
       </div>
     ) : currentStep <= mcqQuestions[selectedCountry].length ? (
       // MCQ Questions Step
-      <div>
+      <div className='-mt-32'>
         <h3 className="text-xl font-semibold">
           {mcqQuestions[selectedCountry][currentStep - 1].question}
         </h3>
@@ -203,7 +203,7 @@ const Form = () => {
   
      
         // User Form Step
-        <form onSubmit={handleSubmit} className="w-full flex flex-col items-start mt-14 md:ml-8 lg:ml-10">
+        <form onSubmit={handleSubmit} className="w-full flex flex-col items-start -mt-6 md:ml-8 lg:ml-10">
          
 {/* <h1 className="text-3xl font-bold text-center text-black mb-8">
   Complete the last step and you'll be on your way to the next exciting journey.

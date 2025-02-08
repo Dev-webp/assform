@@ -86,7 +86,7 @@ const FAQ = () => {
 
   return (
     <div className="w-full px-4 text-2xl py-10 relative z-10 bg-white" style={{fontFamily:'Times new roman'}}>
-      <h2 className="text-center text-4xl font-bold mb-8">Dreaming of Australia? We’re Here to Help!</h2>
+      <h2 className="text-center text-3xl font-bold mb-8">Dreaming of Australia? We’re Here to Help!</h2>
 
       {/* Decorative line */}
       <div className="flex justify-center items-center mb-8">

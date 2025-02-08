@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <div className="w-full py-16 bg-white text-center" style={{ fontFamily: 'Times New Roman, serif' }}>
+    <div className="w-full py-16 bg-white text-center -mt-12" style={{ fontFamily: 'Times New Roman, serif' }}>
       <h2 className="text-3xl font-bold text-gray-800 mb-12">Why We're the Right Choice</h2>
       <div className="flex justify-center items-center mb-12 -m-8">
         <div className="w-20 h-1 bg-orange-600"></div>

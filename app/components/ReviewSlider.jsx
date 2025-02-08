@@ -46,7 +46,7 @@ const ReviewsSlider = () => {
   };
 
   return (
-    <div className="w-full bg-white py-12 mt-12" style={{fontFamily:'Times new Roman'}}>
+    <div className="w-full bg-white py-12" style={{fontFamily:'Times new Roman'}}>
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
           Clients Review
