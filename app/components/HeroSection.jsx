@@ -79,7 +79,7 @@ const HeroSection = () => {
     <span className="text-black">+91 9160449000</span>
   </a>
 </div>
-<hr className="border-black w-[51%] ml-auto border-spacing-1 hidden md:block -mt-2" />
+<hr className="border-black w-[55%] ml-auto border-spacing-1 hidden md:block -mt-2" />
 
 
 
