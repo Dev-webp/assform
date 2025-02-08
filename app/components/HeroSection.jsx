@@ -3,7 +3,8 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { motion } from 'framer-motion';  // Import motion from framer-motion
 import Form from "./Form";
-import WhyChooseUs from "./WhyChooseUs";
+
+import CountriesData from "./CountriesData";
 
 // Define the animation variants
 const containerVariants = (delay) => ({
@@ -33,7 +34,7 @@ const HeroSection = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="absolute top-4 right-4 text-white flex flex-col text-sm sm:text-base">
+        {/* <div className="absolute top-4 right-4 text-white flex flex-col text-sm sm:text-base">
           <a href="tel:+919160449000" className="flex items-center space-x-2">
             <FaPhoneVolume className="text-blue-600 animate-ring mr-1" />
             <span>: +91 9160449000</span>
@@ -42,9 +43,51 @@ const HeroSection = () => {
             <FaEnvelope className="text-blue-600 animate-pulse mr-1" />
             <span>info@vjcoverseas.com</span>
           </a>
-        </div>
+        </div> */}
 
+<div className="absolute top-4 right-4 text-white flex items-center space-x-4 text-xs sm:text-sm md:text-base font-semibold italic">
+  {/* Locations (Hidden on smaller screens) */}
+  <div className="hidden lg:flex items-center space-x-2 text-black uppercase">
+    <div className="flex items-center animate-pulse text-custom-blue">
+      <img src="/loc.png" alt="Bangalore" className="mr-1 w-5 h-5" />
+      <p>Bangalore</p>
+    </div>
+    <div className="flex items-center animate-pulse text-custom-blue">
+      <img src="/loc.png" alt="Hyderabad" className="mr-1 w-5 h-5" />
+      <p>Hyderabad</p>
+    </div>
+    <div className="flex items-center animate-pulse text-custom-blue">
+      <img src="/loc.png" alt="USA" className="mr-1 w-5 h-5" />
+      <p>USA</p>
+    </div>
+  </div>
+
+  {/* Email (Visible on all screens) */}
+  <div className="flex items-center space-x-2 text-black uppercase">
+    <a href="mailto:info@vjcoverseas.com" className="flex items-center text-custom-blue">
+      <FaEnvelope className="mr-1 w-5 h-5 text-black" />
+      <p>info@vjcoverseas.com</p>
+    </a>
+  </div>
+
+  {/* Phone (Visible on all screens) */}
+  <a
+    href="tel:+919160449000"
+    className="flex items-center text-white py-1 px-3 rounded-lg text-xs lg:text-sm whitespace-nowrap font-bold uppercase bg-transparent"
+  >
+    <img src="/phone.gif" alt="Phone" className="h-6 w-6 mr-2" />
+    <span className="text-black">+91 9160449000</span>
+  </a>
+</div>
+<hr className="border-black w-[53%] ml-auto border-spacing-1" />
+
+
+
+
+          
+       
         {/* Motion Div */}
+        <div className="mt-6">
         <motion.div
           variants={containerVariants(0.4)}  // Applying the variants
           initial="hidden"
@@ -63,6 +106,7 @@ const HeroSection = () => {
           />
           
         </motion.div>
+        </div>
 
         {/* Form Container */}
         <div className="absolute top-[80%] sm:top-[90%] left-1/2 transform -translate-x-1/2 -translate-y-1/3 bg-white border border-orange-500 w-full max-w-[900px] h-[400px] flex justify-center items-center shadow-lg rounded-lg p-4">
@@ -74,9 +118,10 @@ const HeroSection = () => {
       </header>
 
       {/* Why Choose Us Section */}
-      <div className="mt-44">
-        <WhyChooseUs />
+      <div className="mt-72">
+        <CountriesData />
       </div>
+      
     </>
   );
 };

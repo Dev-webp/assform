@@ -57,12 +57,12 @@ const ReviewsSlider = () => {
         <div className="w-2 h-1 bg-orange-600 mx-1"></div>
       </div>
 
-        <p className="text-xl text-center text-black mb-8 font-bold">
+        <p className="text-xl text-center text-black mb-8 font-bold ">
           Our Lovely Clients Get Helped From Our Company
         </p>
         <Slider {...settings}>
           {reviews.map((review, index) => (
-            <div key={index} className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg mb-6">
+            <div key={index} className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg mb-6 border border-orange-500 h-[400px]">
               <div className="flex justify-center w-full mb-4" style={{marginBottom:'20px'}}>
                 <img
                   src={review.photo}
