@@ -45,41 +45,42 @@ const HeroSection = () => {
           </a>
         </div> */}
 
-<div className="absolute top-4 right-4 text-white flex flex-col md:flex-row items-center gap-0 text-xs sm:text-sm md:text-base font-semibold italic pt-1">
+<div className="absolute top-4 right-4 text-white flex flex-row sm:flex-row md:flex-row items-center gap-2 text-sm font-semibold italic">
+  
   {/* Locations (Hidden on smaller screens) */}
-  <div className="hidden lg:flex items-center space-x-2 text-black uppercase">
+  <div className="hidden lg:flex items-center space-x-2 text-black uppercase text-[14px]">
     <div className="flex items-center animate-pulse text-custom-blue">
-      <img src="/loc.png" alt="Bangalore" className="mr-1 w-5 h-5" />
+      <img src="/loc.png" alt="Bangalore" className="mr-1 w-4 h-4" />
       <p>Bangalore</p>
     </div>
     <div className="flex items-center animate-pulse text-custom-blue">
-      <img src="/loc.png" alt="Hyderabad" className="mr-1 w-5 h-5" />
+      <img src="/loc.png" alt="Hyderabad" className="mr-1 w-4 h-4" />
       <p>Hyderabad</p>
     </div>
     <div className="flex items-center animate-pulse text-custom-blue">
-      <img src="/loc.png" alt="USA" className="mr-1 w-5 h-5" />
+      <img src="/loc.png" alt="USA" className="mr-1 w-4 h-4" />
       <p>USA</p>
     </div>
   </div>
 
-  {/* Email (Visible on all screens) */}
-  <div className="flex items-center text-black uppercase ml-4">
-  <a href="mailto:info@vjcoverseas.com" className="flex items-center text-custom-blue">
-    <FaEnvelope className="mr-1 w-5 h-5 text-black" />
-    <p>info@vjcoverseas.com</p>
-  </a>
-
-  {/* Phone */}
- 
+  {/* Email (Add spacing in desktop view) */}
+  <div className="flex items-center text-black text-[15px] mt-1 md:mt-0 md:ml-1">
+    <a href="mailto:info@vjcoverseas.com" className="flex items-center text-custom-blue">
+      <FaEnvelope className="mr-1 w-4 h-4 text-black" />
+      <p>info@vjcoverseas.com</p>
+    </a>
   </div>
 
-  {/* Phone */}
-  <a href="tel:+919160449000" className="flex items-center text-white font-bold uppercase bg-transparent">
-    <img src="/phone.gif" alt="Phone" className="h-6 w-6 ml-2" />
+  {/* Phone (Add spacing in desktop view) */}
+   <a href="tel:+919160449000" className="flex items-center text-white font-bold uppercase bg-transparent text-[14px] mt-1 md:mt-0 md:ml-1">
+    <img src="/phone.gif" alt="Phone" className="h-5 w-5 mr-1" />
     <span className="text-black">+91 9160449000</span>
   </a>
+
 </div>
-<hr className="border-black w-[55%] ml-auto border-spacing-1 hidden md:block -mt-2" />
+
+
+<hr className="border-black w-[46%] ml-auto border-spacing-1 hidden md:block -mt-5" />
 
 
 
